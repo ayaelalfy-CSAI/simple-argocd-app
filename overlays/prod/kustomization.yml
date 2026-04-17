@@ -11,9 +11,7 @@ patches:
       kind: Deployment
       name: nginx-deployment
     patch: |-
-      - kind: Deployment
-        metadata:
-          name: nginx-deployment
-        spec:
-          replicas: 2
+      - op: replace
+        path: /spec/replicas
+        value: 2
 
