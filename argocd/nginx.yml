@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/ayaelalfy-CSAI/simple-argocd-app.git'
     targetRevision: master
-    path: overlays/dev
+    path: overlays/prod
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
